@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>FreeCodeCamp Survey Project</title>
+</head>
+<body>
+  <h1 id="title">FreeCodeCamp Survey Project</h1>
+  <p id="description"><strong>Projeto de Certificação</strong> do curso <strong>Design Responsivo para a web</strong></p>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+      <label id="name-label" for="name">Nome:
+        <input id="name" type="text" name="name" required placeholder="Digite seu nome completo">
+      </label>
+      
+      <label id="email-label" for="email">Email:
+        <input name="email" id="email" type="email" required placeholder="seu_email@gmail.com">
+      </label>
+       <label id="number-label" for="number">Idade:
+        <input id="number" type="number" required min="12" max="120" name="idade" placeholder="12">
+      </label>
+      </fieldset>
+      <fieldset>
+        <legend>Escolaridade</legend>
+       
+        <label> Selecione sua escolaridade
+        <select id="dropdown">
+          <option value="">Selecione aqui</option>
+          <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+          <option value="Ensino Fundamental Completo">Ensino Fundamental Completo</option>
+          
+          <option value="Ensino Médio Incompleto">Ensino Médio Incompleto</option>
+          
+          <option value="Ensino Médio Completo">Ensino Médio Completo</option>
+          
+          <option value="Curso Técnico Incompleto">Curso Técnico Incompleto</option>
+          
+          <option value="Curso Técnico Completo">Curso Técnico Completo</option>
+          
+          <option value="Curso Superior Incompleto">Curso Superior Incompleto</option>
+          
+          <option value="Curso Superior Completo">Curso Superior Completo</option>
+        </select>
+      </label>
+        <label>Estuda atualmente?</label>
+        <label id="estuda"><input type="radio" name="estuda" value="sim" >Sim</label>
+        <label id="estuda"><input type="radio" name="estuda" value="não" checked>Não</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sobre você</legend>
+
+          <p>Marque as caixas de seleção que condizem com suas <strong>Soft-Skils</strong></p>
+          <label  class="checkbox" for="paciente"><input id="paciente" type="checkbox" value="paciente"> Paciente</label>
+          <label class="checkbox"for="esforçado"><input id="esforçado" type="checkbox" value="esforçado"> Esforçado</label>
+          <label class="checkbox" for="comunicativo"><input  id="comunicativo" type="checkbox" value="comunicativo"> Comunicativo</label>
+          <label for="bio">Bio
+          <textarea id="bio"rows="5" cols="35" placeholder="Eu tenho 20 anos e possuo conhecimento em html e css..."></textarea>
+            </label>
+        </fieldset>
+    <input id="submit" type="submit" name="Submit">
+  </form>
+</body>
+</html>
